@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #a81616d0;
+}
+
+/* NAVBAR */
+header {
+    background: rgb(223, 147, 147);
+    /* display: flex;
+    justify-content: space-between; */
+    
+}
+
+.navbar li {
+    display: inline-flex;
+    margin: 0px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:#000000;    
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Lucida Console";
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    background:  rgb(231, 200, 116);
+}
+
+#favbutton {
+    background: #a81616d0;
+    opacity: 80%;
+    font-family: "Lucida Console";
+}
+
+#favbutton:hover {
+    opacity: 50%;
+}
+
+.dropdown-toggle {
+    font-family: "Lucida Console";
+    background: #a81616d0;
+    opacity: 80%;
+}
+
+.dropdown-toggle:hover {
+    background: #a81616d0;
+    opacity:50%;
+}
+
+/* stole settings to limit autocomplete lenght from https://stackoverflow.com/questions/7617373/limit-results-in-jquery-ui-autocomplete  */
+.ui-autocomplete { 
+    max-height: 200px;
+    max-width: 400px;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    list-style: none;
+    background:rgb(199, 83, 83);
+    
+}
+
+.ui-autocomplete:hover { 
+    opacity: 100%;
+}
+
+PAGE
+/* Container with release, char-img, stats */
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: row;
+    min-width: fit-content;
+    position: relative;
+} 
+
+.suggestion{
+    font-family: "Lucida Console";
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 0px;
+
+}
+
+.newToRead{ 
+    font-weight: bold;
+}
+
+
+
+.card {
+    background: rgb(223, 147, 147);
+}
+/* Search Bar Format */
+.SUPER-SEARCH-BAR{ 
+    
+    justify-content: center;
+    min-width: 350px;
+    align-items: center;
+    background: rgba(247, 246, 246, 0.281);
+    display: inline-flex;
+    
+    
+}
+
+/* Search Image Icon */
+.img-size {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-left: auto ;
+    padding-right: 5px;
+    background: rgba(253, 117, 117, 0);
+}
+
+/* Text without input inside search bar */
+::placeholder{
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 110%;
+    font-weight: Bold;
+    font-family: "Lucida Console";
+    
+}
+/* The text input that will be searched */
+.SUPER-SEARCH-BAR input {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.719);
+    flex: 1;
+    outline: rgb(255, 255, 255);
+    font-size: 140%;
+    font-weight: Bold;
+    font-family: "Lucida Console";
+}
+
+.appearance {
+    font-weight: bold;
+}
+
+.stats {
+    font-weight: bold;
+}
+
+/* Biography,Connections,Work containters */
+.container-2 {
+    background: rgb(223, 147, 147);
+    
+    font-family: "Lucida Console";
+    
+    
+}
+
+.Biography > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 140%;
+    
+}
+.Biography > p {
+    text-align: left;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.container-3 {
+    background: rgb(223, 147, 147);
+    font-family: "Lucida Console";
+    
+    
+}
+.Connections > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 140%;
+    margin-left: 20px;
+    
+}
+.Connections > p {
+    text-align: left;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.container-4 {
+    background: rgb(223, 147, 147);
+    font-family: "Lucida Console";
+    
+    
+}
+.Work > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 140%;
+    
+}
+.Work > p {
+    text-align: left;
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 20px;
+}
